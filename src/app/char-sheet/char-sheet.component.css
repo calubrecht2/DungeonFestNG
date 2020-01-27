@@ -1,0 +1,34 @@
+div.charSheet {width:350px; height:474px; padding: 5px; border-width:1px; border-style:solid; float:left; page-break-inside:avoid}
+
+
+div {font-size:16px}
+
+div.charName {width:182px; height:33px; margin: 5px; border-width:1px; border-style:solid; float:left}
+div.charClass {width:105px; height:33px; margin: 5px; border-width:1px; border-style:solid; float:left}
+div.charLevel {width:57px; height:33px; margin: 5px; border-width:1px; border-style:solid; float:left}
+
+div.charPic {width:144px; height:188px; margin: 5px; border-width:1px; border-style:solid; float:right}
+div.charPic img {width:134px; height:172px; margin:5px}
+
+div.baseStat {width:85px; height:43px; margin: 5px; border-width:1px; border-style:solid; float:left}
+
+div.ability {width:336px; height:35px; margin: 3px 5px 3px 5px; border-width:1px; border-style:solid; float:left}
+div.ability.long {height:52px; }
+
+div.clear {clear:both}
+
+div.baseStat .title {font-size:10px;}
+div.baseStat span {margin:2px; font-size:28px}
+div.charLevel span {margin:2px; font-size:28px}
+
+div.baseStat span.title::before {  background-size:24px 24px; width: 24px; height:24px; display:inline-block; content:""; -webkit-print-color-adjust:exact}
+div.charLevel span::before {  background-size:24px 24px; width: 24px; height:24px; display:inline-block; content:""; background-image: url('/images-/level.png'); -webkit-print-color-adjust:exact}
+div.hp span.title::before {background-image: url('/images-/hp.png')}
+div.armor span.title::before {background-image: url('/images-/armor.png')}
+div.move span.title::before {background-image: url('/images-/move.png')}
+div.dodge span.title::before {background-image: url('/images-/dodge.png')}
+div.resist span.title::before {background-image: url('/images-/ohm.png')}
+div.initiative span.title::before {background-image: url('/images-/init.png')}
+div.resist span.title::before {background-image: url('/images-/ohm.png')}
+
+div.size span {margin:2px; font-size:24px}

@@ -21,7 +21,8 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              { "glob": "*", "input": "src/assets/images-/", "output": "images-/"}
             ],
             "styles": [
               "src/styles.css"
@@ -63,7 +64,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "dungeon:build"
+            "browserTarget": "dungeon:build",
+            "host": "0.0.0.0",
+            "publicHost": "triklops"
           },
           "configurations": {
             "production": {
@@ -86,7 +89,8 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              { "glob": "*", "input": "src/assets/images-/", "output": "/images-/"}
             ],
             "styles": [
               "src/styles.css"
