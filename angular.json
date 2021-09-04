@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "4eff1aea-8b59-476d-8ade-128fa0b810bc"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -18,7 +21,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets",
@@ -42,9 +45,9 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
+              "aot": true,
               "buildOptimizer": true,
               "budgets": [
                 {
